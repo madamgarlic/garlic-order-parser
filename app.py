@@ -26,7 +26,7 @@ const GarlicParserApp = () => {
 
     // 무게 추출 및 계산
     const extractWeight = (str) => {
-      // 수식 패턴 (1kg + 1kg, 1kg x 3개 등)
+      # 수식 패턴 (1kg + 1kg, 1kg x 3개 등)
       const formulaMatch = str.match(/(\d+)kg\s*[+x×]\s*(\d+)kg/i) || 
                           str.match(/(\d+)kg\s*[x×]\s*(\d+)개/i);
       if (formulaMatch) {
